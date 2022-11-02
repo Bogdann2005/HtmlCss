@@ -1,0 +1,1074 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: whitesmoke;
+
+}
+
+/* menu */
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 9999;
+}
+
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav a {
+    width: 15%;
+    height: 80%;
+    margin-left: 5%;
+}
+
+nav a img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+nav ul {
+    width: 40%;
+    height: 80%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+nav ul li {
+    width: auto;
+    height: auto;
+}
+
+nav ul li a {
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: linear 300ms;
+}
+
+nav ul li a:hover {
+    color: #ffc800;
+}
+
+.divmenu {
+    width: 100%;
+    height: 660px;
+    position: relative;
+    top: 0;
+    background-image: url(../header-bg.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divmenu div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+    margin-top: 160px;
+}
+
+.divmenu div h2 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+.divmenu div p {
+    width: 100%;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120px;
+}
+
+
+.divmenu div a {
+   padding: 20px;
+    margin: 50px;
+    background-color: #ffc800;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divmenu div a:hover {
+    background-color: #ad8a0a;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+/* SERVICES */
+
+.services {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.services .laibl {
+    width: 100%;
+    height: 100px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.services .laibl h2 {
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.services .laibl p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    color: #575252;
+}
+
+.services ul {
+    width: 90%;
+    height: 400px;
+    margin: 40px 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services ul li {
+    width: 25%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.services ul li div {
+    width: 40%;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc800;
+    font-size: 60px;
+    color: #fff;
+}
+
+.services ul li h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.services ul li p {
+    color: #575252;
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+/* portfolio */
+
+.portfolio .laibl {
+    width: 100%;
+    height: 100px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.portfolio .laibl h2 {
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.portfolio .laibl p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    color: #575252;
+}
+
+.portfolio ul {
+    width: 90%;
+    height: auto;
+    margin: 50px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.portfolio ul li {
+    width: 30%;
+    height: 350px;
+    margin-top: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.portfolio ul li div {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.portfolio ul li h2 {
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.portfolio ul li p {
+    font-size: 17px;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+    color: #575252;
+}
+
+.portfolio ul li div p {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(255, 200, 0, 0.9);
+    opacity: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: linear 200ms;
+}
+
+.portfolio ul li div p:hover {
+    opacity: 1;
+}
+
+.portfolio ul li div img {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+}
+
+/* ------------about-------------- */
+.about {
+    width: 100%;
+    height: 1800px;
+    background-color: #fff;
+}
+
+.about .laibl {
+    width: 100%;
+    height: 100px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.about .laibl h2 {
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.about .laibl p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    color: #575252;
+}
+
+.about ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    position: relative;
+
+
+}
+
+.about ul li {
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 90px;
+
+
+}
+
+.lefttext {
+    width: 28%;
+    height: 250px;
+    text-align: end;
+    padding-left: 100px;
+
+
+}
+
+.lefttext p {
+    color: #575252;
+    font-size: 17px;
+    padding-top: 10px;
+
+}
+
+.righttext {
+    width: 28%;
+    height: 250px;
+    text-align: left;
+    position: absolute;
+    left: 800px;
+
+
+
+}
+
+.righttext p {
+    color: #575252;
+    font-size: 17px;
+    padding-top: 10px;
+
+
+}
+
+.leftdiv {
+    position: absolute;
+    left: 40%;
+    bottom: 813px;
+    width: 150px;
+    height: 150px;
+    background-color: #ad8a0a;
+    border: 8px solid #e9ecef;
+    border-radius: 100%;
+    margin-left: 45px;
+    top: 10px;
+
+
+}
+
+.leftdiv img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.leftdiv::before {
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    width: 4px;
+    height: 1200px;
+    background-color: #e9ecef;
+}
+
+.rightdiv {
+    position: absolute;
+    left: 40%;
+    top: 350px;
+    bottom: 813px;
+    width: 150px;
+    height: 150px;
+    background-color: #ad8a0a;
+    border: 8px solid #e9ecef;
+    border-radius: 100%;
+    margin-left: 45px;
+
+
+}
+
+.rightdiv img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.lefttext2 {
+    width: 28%;
+    height: 250px;
+    text-align: end;
+    padding-left: 100px;
+    position: absolute;
+    top: 670px;
+
+
+}
+
+.lefttext2 p {
+    color: #575252;
+    font-size: 17px;
+    padding-top: 10px;
+
+}
+
+.leftdiv2 {
+    position: absolute;
+    left:40%;
+    bottom: 813px;
+    width: 150px;
+    height: 150px;
+    background-color: #ad8a0a;
+    border: 8px solid #e9ecef;
+    border-radius: 100%;
+    margin-left: 45px;
+    top: 670px;
+
+
+}
+
+.leftdiv2 img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.righttext2 {
+    width: 28%;
+    height: 250px;
+    text-align: left;
+    position: absolute;
+    left: 800px;
+    top: 1000px;
+
+
+
+}
+
+.righttext2 p {
+    color: #575252;
+    font-size: 17px;
+    padding-top: 10px;
+
+
+}
+
+.rightdiv2 {
+    position: absolute;
+    left: 40%;
+    top: 1000px;
+    bottom: 813px;
+    width: 150px;
+    height: 150px;
+    background-color: #ad8a0a;
+    border: 8px solid #e9ecef;
+    border-radius: 100%;
+    margin-left: 45px;
+
+
+}
+
+.rightdiv2 img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.bottomdiv {
+    width: 150px;
+    height: 150px;
+    background-color: #ffc800;
+    border: 8px solid #e9ecef;
+    border-radius: 100%;
+    margin-left: 45px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left:40%;
+    top: 1300px;
+}
+
+.bottomdiv :first-child {
+    margin-top: 40px;
+}
+
+/* ----------team------------ */
+.team {
+    width: 100%;
+    height: 800px;
+    background-color: whitesmoke;
+}
+.team .laibl {
+    width: 100%;
+    height: 100px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.team .laibl h2 {
+    font-size: 40px;
+    line-height: 70px;
+}
+
+.team .laibl p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    color: #575252;
+}
+.divconteiner{
+    position:absolute;
+    left: 40px;
+    width: 95%;
+    height: auto;
+    display: flex;
+}
+.divteam1{
+    margin-top: 60px;
+    width: 37%;
+    display: flex;
+    height: 300px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.divteam1 .divimg img{
+    width: 200px;
+    height: 200px;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.divteam1 p{
+    line-height: 30px;
+    color: #575252;
+    font-size: 17px;
+}
+.diviconteam{
+    display: flex;
+}
+.diviconteam i{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #212529;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.divteam1{
+    margin-top: 60px;
+    width: 37%;
+    display: flex;
+    height: 300px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divteam2{
+    margin-top: 64px;
+    width: 37%;
+    display: flex;
+    height: 300px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.divteam2 .divimg2 img{
+    width: 200px;
+    height: 200px;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.divteam2 p{
+    line-height: 30px;
+    color: #575252;
+    font-size: 17px;
+}
+.diviconteam2{
+    display: flex;
+}
+.diviconteam2 i{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #212529;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.divteam2{
+    margin-top: 60px;
+    width: 37%;
+    display: flex;
+    height: 300px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.divteam3{
+    margin-top: 65px;
+    width: 37%;
+    display: flex;
+    height: 300px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.divteam3 .divimg3 img{
+    width: 200px;
+    height: 200px;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.divteam3 p{
+    line-height: 30px;
+    color: #575252;
+    font-size: 17px;
+}
+.diviconteam3{
+    display: flex;
+}
+.diviconteam3 i{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #212529;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.divteam3{
+    margin-top: 60px;
+    width: 37%;
+    display: flex;
+    height: 300px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.divteamtext{
+    position: absolute;
+    top: 450px;
+    left: 250px;
+    color: #6c757d;
+    font-size: 17px;
+    line-height: 1.75;
+}
+.divteamtext :last-child{
+    margin-left: 150px;
+}
+.team .divsocial{
+    position: absolute;
+    top: 4900px;
+    width: 100%;
+    height: 170px;
+    background-color: white;
+}
+.divdocialicon{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 120px;
+}
+.divdocialicon img{
+    cursor: pointer;
+    height: 50px;
+}
+/* --------------contact------------ */
+.contact{
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-color: #212529;
+    background-image: url(../map-image.png);
+}
+.contact .laibl {
+    width: 100%;
+    height: 100px;
+    padding-top: 215px;
+    text-align: center;
+}
+
+.contact .laibl h2 {
+    font-size: 40px;
+    color: white;
+    line-height: 70px;
+}
+
+.contact .laibl p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    color: #575252;
+}
+.divallinput{
+    width: 100%;
+    display: flex;
+}
+.divinput{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: -37px;
+    margin-top: 50px;
+}
+.divinput input{
+    height: 65px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+   padding-left: 10px;
+   font-size: 18px;
+
+}
+.divinputtext{
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 50px;
+
+}
+.divinputtext textarea{
+    width: 90%;
+    height: 240px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+button{
+  padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ffc800;
+    font-size: 17px;
+    font-weight: bold;
+    border-color: #ffc800 ;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+footer{
+    width: 100%;
+    height: 70px;
+}
+.divfooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 20px;
+}
+.divfooter p{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.divlink a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+@media screen and  (max-width:1024px) {
+    .divmenu {
+        width: 100%;
+        height: 590px;
+        position: relative;
+        top: 0;
+        background-image: url(../header-bg.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li a {
+        margin: 15px;
+        font-size: 17px;
+        font-weight: 400;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 1px;
+        transition: linear 300ms;
+    }
+    .divmenu div a {
+        padding: 16px;
+        margin: 50px;
+        background-color: #ffc800;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .divmenu div p {
+        width: 100%;
+        font-size: 49px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 111px;
+    }
+    .divmenu div h2 {
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+        font-style: italic;
+    }
+    .services ul li div {
+        width: 49%;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffc800;
+        font-size: 60px;
+        color: #fff;
+    }
+    .services .laibl {
+        width: 100%;
+        height: 100px;
+        padding-top: 54px;
+        text-align: center;
+    }
+    .services ul li div {
+        width: 49%;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffc800;
+        font-size: 60px;
+        color: #fff;
+    }
+    .services ul li p {
+        color: #575252;
+        text-align: center;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .portfolio .laibl {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .portfolio ul li {
+        width: 30%;
+        height: 328px;
+        margin-top: 20px;
+        background-color: #fff;
+        text-align: center;
+    }
+    .portfolio ul li h2 {
+        font-size: 23px;
+        line-height: 47px;
+    }
+    .portfolio ul li p {
+        font-size: 15px;
+        font-weight: 200;
+        font-style: italic;
+        font-family: 'Roboto Slab', serif;
+        color: #575252;
+    }
+    .righttext {
+        width: 28%;
+        height: 250px;
+        text-align: left;
+        position: absolute;
+        left: 65%;
+    }
+    .righttext2 {
+        width: 29%;
+        height: 250px;
+        text-align: left;
+        position: absolute;
+        left: 65%;
+        top: 1000px;
+    }
+    .lefttext2 {
+        width: 29%;
+        height: 250px;
+        text-align: end;
+        padding-left: 80px;
+        position: absolute;
+        top: 670px;
+    }
+    .lefttext {
+        width: 29%;
+        height: 250px;
+        text-align: end;
+        padding-left: 88px;
+    }
+    .team {
+        width: 100%;
+        height: 716px;
+        background-color: whitesmoke;
+    }
+    .divteam1 .divimg img {
+        width: 150px;
+        height: 150px;
+        border: 0.5rem solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+    }
+    .divteam2 .divimg2 img {
+        width: 150px;
+        height: 150px;
+        border: 0.5rem solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+    }
+    .divteam3 .divimg3 img {
+        width: 150px;
+        height: 150px;
+        border: 0.5rem solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+    }
+    .diviconteam i {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        background-color: #212529;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .diviconteam2 i {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        background-color: #212529;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .diviconteam3 i {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        background-color: #212529;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .divteamtext {
+        position: absolute;
+        top: 450px;
+        left: 175px;
+        color: #6c757d;
+        font-size: 15px;
+        line-height: 1.75;
+    }
+    .services .laibl h2 {
+        font-size: 35px;
+        line-height: 100px;
+    }
+    .services .laibl p {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 200;
+        color: #575252;
+    }
+    .contact {
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+        background-color: #212529;
+        background-image: url(../map-image.png);
+    }
+    .contact .laibl {
+        width: 100%;
+        height: 100px;
+        padding-top: 36px;
+        text-align: center;
+    }
+    .team .divsocial {
+        position: absolute;
+        top: 5287px;
+        width: 100%;
+        height: 100px;
+        background-color: white;
+    }
+    .divdocialicon img {
+        cursor: pointer;
+        height: 35px;
+    }
+    .divdocialicon {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        margin-left: 120px;
+    }
+}
